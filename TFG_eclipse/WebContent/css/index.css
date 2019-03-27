@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 50px;
+}
+
+.logo {
+    width: 64px;
+}
+
+.f-row {
+    max-width: 550px;
+    margin: auto;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.form {
+    padding: 10px;
+}
+
+.f-col {
+    padding: 30px 20px;
+}
+
+.f-h1 {
+    margin: 0 !important;
+    text-align: center;
+}
+
+.f-fgr {
+    padding: 25px 0;
+}
+
+.f-reg {
+    text-align: center;
+}
+
+.f-hr {
+    margin: 5px !important;
+}
+
+.f-a {
+    color: wheat;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
