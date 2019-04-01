@@ -48,7 +48,7 @@ function setHeader() {
 
     var codeHeader = '';
     codeHeader = '<nav class="navbar navbar-expand-md">';
-    codeHeader += '    <a class="navbar-brand" href="index.html">CleanCloud</a>';
+    codeHeader += '    <a class="navbar-brand" href="index.html#inicio">CleanCloud</a>';
     codeHeader += '    <button class="navbar-toggler  pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">';
     codeHeader += '        <span class="navbar-toggler-icon"></span>';
     codeHeader += '    </button>';
@@ -79,7 +79,7 @@ function setFooter() {
     var codeFooter = '';
     codeFooter += '<div class="row foot-row">';
     codeFooter += '<div class="col-md-12 col-sm-12 foot-col">';
-    codeFooter += '<img src="../img/abeja2.png">';
+    codeFooter += '<img src="../img/abeja2.png" alt="abeja">';
     codeFooter += '</div>';
     codeFooter += '</div>';
     codeFooter += '<div class="row foot-row">';
@@ -215,6 +215,6 @@ function setMap() {
     marcador = new google.maps.Marker({
         position: { lat: latitud, lng: longitud },
         map: mapa,
-        title: "EuskPolution"
+        title: "CleanCloud"
     })
 }
