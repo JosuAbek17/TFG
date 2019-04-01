@@ -16,9 +16,9 @@
 </head>
 
 <body>
-
+    <header class="header"></header>
     <div class="container-fluid div1">
-        <header class="header"></header>
+
 
         <video class="video" autoplay muted loop id="myVideo">
                     <source src="video/ocean.mp4" type="video/mp4">
@@ -45,7 +45,7 @@
                         <input id="user" type="text" class="form-control" name="user" placeholder="Usuario" required>
                     </div>
                     <div class="input-group f-fgr">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
                         <input id="password" type="password" class="form-control" name="pass" placeholder="Password" required>
                     </div>
                     <div class="f-fgr">
@@ -57,23 +57,23 @@
                 <form class="form" action="AccesControler?opcion=validar" method="post">
                     <div class="input-group f-fgr">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="user" placeholder="registro" required>
+                        <input id="user" type="text" class="form-control" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="input-group f-fgr">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="user" placeholder="registro" required>
+                        <input id="user" type="text" class="form-control" name="apellidos" placeholder="Apellido" required>
                     </div>
                     <div class="input-group f-fgr">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="user" placeholder="registro" required>
+                        <input id="user" type="text" class="form-control" name="usern" placeholder="Usuario" required>
                     </div>
                     <div class="input-group f-fgr">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="user" placeholder="registro" required>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                        <input id="user" type="text" class="form-control" name="passn" placeholder="Password" required>
                     </div>
                     <div class="input-group f-fgr">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="pass" placeholder="registro" required>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="password" type="password" class="form-control" name="correo" placeholder="email" required>
                     </div>
                     <div class="f-fgr">
                         <button type="button" class="btn btn-info btn-block" value="Enviar">Registro</button>
@@ -85,7 +85,7 @@
     </div>
 
     </div>
-    <div id="nosotros" class="row div2 animated fadeIn fast">
+    <div id="nosotros" class="container-fluid row div2 animated fadeIn fast">
         <div class="ab-row row">
             <div class="ab-col col-md-12 col-sm-12">
                 <h2 class="ab-h">About Us</h2>
@@ -98,7 +98,7 @@
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </div>
-        <div class="ab-row-i row">
+        <!-- <div class="ab-row-i row">
             <div class="ab-col col-md-3 col-sm-3">
                 <p><a href=""><i class="ab-i material-icons">fingerprint</i></a>
                 </p>
@@ -123,114 +123,70 @@
                 <h5>Cloud</h5>
 
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="row div3 animated fadeIn fast">
         <div class="col-md-12 col-emp">
             <h2>Trabajamos con...</h2>
         </div>
+
+
+        <div class="col-md-3 col-sm-3 col-emp one"><img src="img/one.png" alt=""> </div>
+        <div class="col-md-3 col-sm-3 col-emp eitb"><img src="img/eitb.png" alt=""></div>
+        <div class="col-md-3 col-sm-3 col-emp upv"><img src="img/upv.png" alt=""></div>
+        <div class="col-md-3 col-sm-3 col-emp iber"><img src="img/iber.png" alt=""></div>
+
     </div>
-    <div class="row div3 row-emp">
-        <div class="col-md-2 col-sm-2 col-emp one"><img src="img/one.png" alt=""> </div>
-        <div class="col-md-2 col-sm-2 col-emp eitb"><img src="img/eitb.png" alt=""></div>
-        <div class="col-md-2 col-sm-2 col-emp upv"><img src="img/upv.png" alt=""></div>
-        <div class="col-md-2 col-sm-2 col-emp apple"><img src="img/apple.png" alt=""></div>
-        <div class="col-md-2 col-sm-2 col-emp iber"><img src="img/iber.png" alt=""></div>
+    <div id="contacto" class="contacto">
+
+
+
+        <div class="row row-chat container-fluid div4">
+            <div class="col-md-12 col-sm-12 col-p animated fadeIn fast">
+                <h2>Contacto</h2>
+                <p>Mantente en contacto con nosotros para estar informado de las <span>ultimas actualizaciones</span> y los proximos eventos </p>
+                <button onclick="setChat()" type="button" class="boton btn btn-primary">Chat</button>
+            </div>
+            <div class="col-md-9 col-sm-9 col-chat animated fadeIn fast">
+                <div id="output"></div>
+
+                <div id="container">
+                    <input type="text" id="input" value="">
+                    <button onclick="setCont()" type="button" class="boton2 btn btn-primary">Volver</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-chat animated fadeIn fast">
+                <img class="bot" src="img/bot.gif" alt="bot">
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-4 col-contact row-contact">
+                <img src="img/correo.png" alt="#"><br>
+                <h5>Email Us</h5><br>
+                <p><a href="mailto:hello@jbidigital.co.uk">hello@jbidigital.co.uk</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-contact row-contact">
+                <img src="img/phone.png" alt="#"><br>
+                <h5>Call Us</h5><br>
+                <p>020 7043 2510</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-contact row-contact">
+                <img src="img/casa2.png" alt="#"><br>
+                <h5>Visit Us</h5><br>
+                <p>24 Queen Anne St,<br>London W1G 9AY</p>
+            </div>
+
+        </div>
+
+        <div id="map">
+
+        </div>
+
+
+        <footer class="footer"></footer>
     </div>
 
-
-    <footer class="footer"></footer>
-
-
-    <!-- <div class="container-fluid cont1">
-        <div class="background">
-            <video class="video" autoplay muted loop id="myVideo">
-            <source src="video/ocean.mp4" type="video/mp4">
-        </video>
-        </div>
-        <header>
-            <div class="row fluid large wrap clear">
-                
-                <div class="col-md-4 col-sm-4">
-
-
-                    <img class="logo" src="img/abeja2.png" alt="#">
-
-                </div>
-                <div class="col-md-8 col-sm-8">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link" href="#">Quienes somos</a>
-                                <a class="nav-item nav-link" href="#">Contacto</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-
-
-            </div>
-        </header>
-        <div class="row f-row justify-content-center align-items-center">
-            <div class="col-md-12 col-sm-12 f-col">
-                <h1 class="f-h1">Inicio de Sesión</h1>
-                <form class="form">
-                    <div class="input-group f-fgr">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="usuario" type="text" class="form-control" name="usuario" placeholder="Usuario">
-                    </div>
-                    <div class="input-group f-fgr">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-                    </div>
-                    <div class="f-fgr">
-                        <button type="button" class="btn btn-info btn-block" value="Enviar">Entrar</button>
-                    </div>
-                    <div class="f-reg">
-                        <a class="f-a" href="#">Registro</a>
-                        <hr class="f-hr">
-                    </div>
-            </div>
-            </form>
-        </div>
-    </div> -->
-    <!-- <div class="container-fluid cont2">
-        <div class="about row">
-            <div class="ab-row row">
-                <div class="ab-col col-md-12">
-                    <h2 class="ab-h">About Us</h2>
-                </div>
-            </div>
-            <div class="ab-row row">
-                <div class="ab-col-p col-md-12">
-                    <p class="ab-p">Lorem Ipsum is <span class="ab-sp">simply dummy text of the printing</span> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and it
-                        has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <span class="ab-sp">Letraset sheets containing Lorem Ipsum passages </span>,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
-            <div class="ab-row-i row">
-                <div class="ab-col col-md-3">
-                    <p><i class="ab-i material-icons">fingerprint</i>
-                        <h5>Security</h5>Fusce a augue lorem. Morbi ut orci nec odio placerat viverra</p>
-                </div>
-                <div class="ab-col col-md-3">
-                    <p><i class="ab-i material-icons">dvr</i>
-                        <h5>Web Design</h5>Fusce a augue lorem. Morbi ut orci nec odio placerat viverra</p>
-                </div>
-                <div class="ab-col col-md-3">
-                    <p><i class="ab-i material-icons">	aspect_ratio</i>
-                        <h5>Responsive</h5>Fusce a augue lorem. Morbi ut orci nec odio placerat viverra</p>
-                </div>
-                <div class="ab-col col-md-3">
-                    <p><i class="ab-i material-icons">cloud_queue</i>
-                        <h5>Cloud</h5>Fusce a augue lorem. Morbi ut orci nec odio placerat viverra</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 

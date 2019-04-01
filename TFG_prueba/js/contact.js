@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".col-chat").hide();
     setMap();
+    $(".footer").show();
 });
 
 var questionNum = 0; // keep count of question, used for IF condition.
@@ -33,7 +34,7 @@ function bot() {
     } else if (questionNum == 3) {
         output.innerHTML = '<h1>Gracias por conifar en XXX</h1>';
         document.getElementById("input").value = "";
-        question = '<h1>Gracias por conifar en XXX</h1>';
+        question = '<h1>Gracias por conifar en EuskalPollution</h1>';
         questionNum = 0;
         $("#input").hide();
         $(".boton2").show();
@@ -73,7 +74,7 @@ function setChat() {
 
 }
 var mapa;
-var marcador = "CASA";
+var marcador;
 
 function setMap() {
 
@@ -83,9 +84,9 @@ function setMap() {
         center: { lat: latitud, lng: longitud },
         zoom: 15
     });
-    var marcador = new google.maps.Marker({
+    marcador = new google.maps.Marker({
         position: { lat: latitud, lng: longitud },
         map: mapa,
-        text: "EuskPolution"
-    });
+        title: "EuskPolution"
+    })
 }
