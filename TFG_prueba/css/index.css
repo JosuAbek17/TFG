@@ -1,0 +1,314 @@
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+}
+
+.div1 {
+    padding: 50px;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 64px;
+}
+
+.f-row {
+    max-width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.f-col {
+    text-align: center;
+}
+
+.f-col a {
+    color: wheat;
+}
+
+.form {
+    padding: 10px;
+}
+
+.f-col {
+    padding: 30px 20px;
+}
+
+.f-fgr {
+    padding: 25px 0;
+}
+
+.f-reg {
+    text-align: center;
+}
+
+.f-hr {
+    margin: 5px !important;
+}
+
+.f-a {
+    color: wheat;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.f-a:hover {
+    color: wheat;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* QUE HACEMOS */
+
+.div2 {
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+    height: 100%;
+}
+
+.ab-row {
+    width: 100%;
+}
+
+.ab-h {
+    margin-bottom: 60px;
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.ab-col {
+    text-align: center;
+    margin: auto;
+}
+
+.ab-col-p {
+    max-width: 800px;
+    margin: auto;
+}
+
+.ab-p {
+    margin: auto !important;
+    text-align: center;
+}
+
+.ab-sp {
+    text-decoration: none;
+    background-color: #9ddee1;
+}
+
+.ab-row-i {
+    width: 100%;
+    padding: 60px 0 0;
+}
+
+.ab-i {
+    font-size: 165px;
+    padding: 20px;
+}
+
+.ns {
+    margin: 0 100px;
+    background-color: black;
+    height: 0.1px;
+}
+
+.prov {
+    width: 100%;
+    height: 100%;
+}
+
+.col-prov {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+.material-icons {
+    font-size: 75px !important;
+    color: rgb(63, 63, 63);
+}
+
+
+/* BILBAO */
+
+.div4 {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.col-bilb {
+    padding: 0;
+}
+
+.col-bilb img {
+    width: 100%;
+    height: 400px;
+    filter: brightness(0.8);
+}
+
+.div3 {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.row-emp {
+    padding: 20px;
+}
+
+.col-emp {
+    padding: 0;
+    align-items: center;
+}
+
+.col-emp img {
+    display: block;
+    margin: auto;
+}
+
+.one img {
+    width: 130px;
+    height: 100px;
+}
+
+.eitb img {
+    margin-top: 10px;
+    width: 130px;
+    height: 80px;
+}
+
+.upv img {
+    width: 130px;
+    height: 100px;
+}
+
+.apple img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.iber img {
+    width: 150px;
+    height: 100px;
+}
+
+.green img {
+    margin-top: 40px;
+    width: 120px;
+    height: 30px;
+}
+
+.div3 h2 {
+    padding: 20px 0px 70px 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: .09em;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    border: 0 !important;
+    clear: both;
+    border-style: solid;
+    border-color: #DBDBDB;
+    border-width: 1px 0 0 0;
+    background-color: rgb(63, 63, 63);
+    padding: 20px;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.foot-row {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.foot-col i {
+    font-size: 24px;
+    color: #008B8B;
+}
+
+
+/* ANIMACION */
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

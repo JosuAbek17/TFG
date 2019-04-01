@@ -1,0 +1,183 @@
+html,
+h5,
+h1,
+p {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.div1 {
+    padding: 30px;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    clear: both;
+    border-style: solid;
+    border-color: #DBDBDB;
+    border-width: 1px 0 0 0;
+    background-color: rgb(63, 63, 63);
+    padding: 20px;
+    align-content: center;
+}
+
+.foot-row {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.foot-col i {
+    font-size: 24px;
+    color: #008B8B;
+}
+
+
+/* CHAT */
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.col-p {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.col-p p {
+    padding: 20px;
+}
+
+#output {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+input {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+    color: #000;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+
+hr {
+    max-width: 550px;
+    border: .7px solid black
+}
+
+.row-chat {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.col-chat {
+    padding: 42px;
+    max-width: 600px;
+    margin: auto;
+}
+
+span {
+    text-decoration: none;
+    background-color: #9ddee1;
+}
+
+.bot {
+    width: 300px;
+    float: right;
+}
+
+
+/* CONTACTO IMG */
+
+.row-contact {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.col-contact {
+    padding: 30px;
+}
+
+.col-contact img {
+    width: 100px;
+}
+
+.col-contact h5 {
+    font-size: 1.225em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.col-contact p {
+    font-weight: 300;
+}
+
+
+/* MAP */
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* ANIMACION */
+
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 3.4s;
+    animation-duration: 3.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
